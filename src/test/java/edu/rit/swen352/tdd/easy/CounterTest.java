@@ -44,4 +44,11 @@ class CounterTest {
         Counter testCounter = new Counter(5, 10);
         assertEquals(10, testCounter.getUpperLimit());
     }
+
+    @Test
+    @DisplayName("4: Get value of current count")
+    void getCountTest() {
+        Counter testCounter = new Counter(5, 10);
+        assertEquals(5, testCounter.getCount());
+    }
 }
