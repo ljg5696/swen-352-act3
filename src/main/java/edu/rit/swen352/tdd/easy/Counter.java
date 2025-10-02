@@ -60,6 +60,7 @@ public class Counter {
     }
 
     public void increment() {
-        count++;
+        if (count >= upperLimit) throw new IllegalStateException();
+        else { count++; }
     }
 }
