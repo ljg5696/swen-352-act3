@@ -25,8 +25,8 @@ package edu.rit.swen352.tdd.easy;
  */
 public class Counter {
     private int count;
-    private /*final*/ int lowerLimit;
-    private /*final*/ int upperLimit;
+    private final int lowerLimit;
+    private final int upperLimit;
     private static final int MAX_INTEGER = 1000;
 
     public Counter(int lowerLimit, int upperLimit) {
@@ -42,6 +42,8 @@ public class Counter {
     }
 
     public Counter() {
-        assert false : "Not implemented yet";
+        this.lowerLimit = 0;
+        this.upperLimit = MAX_INTEGER;
+        count = 0;
     }
 }
