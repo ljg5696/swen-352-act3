@@ -59,4 +59,13 @@ class CounterTest {
         testCounter.increment();
         assertEquals(6, testCounter.getCount());
     }
+
+    @Test
+    @DisplayName("5b: unsuccessfully increment count")
+    void incrementFail() {
+        Counter testCounter = new Counter(10, 10);
+        Exception exception = assertThrows(IllegalStateException.class,
+            () -> testCounter.increment());
+        assertEquals(exception.getMessage(), testCounter.getCount());
+    }
 }
