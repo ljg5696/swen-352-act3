@@ -52,7 +52,6 @@ public class Counter {
     }
 
     public int getUpperLimit() {
-        assert false : "Not implemented yet";
-        return -1;
+        return upperLimit;
     }
 }
