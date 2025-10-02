@@ -51,4 +51,12 @@ class CounterTest {
         Counter testCounter = new Counter(5, 10);
         assertEquals(5, testCounter.getCount());
     }
+
+    @Test
+    @DisplayName("5a: successfully increment count")
+    void incrementSuccess() {
+        Counter testCounter = new Counter(5, 10);
+        testCounter.increment();
+        assertEquals(6, testCounter.getCount());
+    }
 }
