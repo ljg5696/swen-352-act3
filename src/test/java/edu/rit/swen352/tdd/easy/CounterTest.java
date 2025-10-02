@@ -84,11 +84,8 @@ class CounterTest {
     @DisplayName("6b: unsuccessfully decrement count")
     void decrementFail() {
         Counter testCounter = new Counter(5, 10);
-        testCounter.increment();
-        testCounter.increment();
-
         assertThrows(IllegalStateException.class,
             () -> testCounter.decrement());
-        assertEquals(6, testCounter.getCount());
+        assertEquals(5, testCounter.getCount());
     }
 }

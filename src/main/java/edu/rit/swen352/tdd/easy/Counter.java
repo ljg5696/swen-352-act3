@@ -65,6 +65,7 @@ public class Counter {
     }
 
     public void decrement() {
-        count--;
+        if (count <= lowerLimit) throw new IllegalStateException();
+        else { count--; }
     }
 }
