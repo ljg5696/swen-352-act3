@@ -23,4 +23,11 @@ class CounterTest {
         Counter testCounter = new Counter(-5);
         assertNotNull(testCounter);
     }
+
+    @Test
+    @DisplayName("1c: Construct Counter w/ no given bounds")
+    void constructCounterDefaults() {
+        Counter testCounter = new Counter();
+        assertNotNull(testCounter);
+    }
 }

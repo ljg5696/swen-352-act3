@@ -40,4 +40,8 @@ public class Counter {
         this.upperLimit = MAX_INTEGER;
         count = lowerLimit;
     }
+
+    public Counter() {
+        assert false : "Not implemented yet";
+    }
 }
