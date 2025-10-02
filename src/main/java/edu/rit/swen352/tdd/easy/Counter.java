@@ -63,4 +63,8 @@ public class Counter {
         if (count >= upperLimit) throw new IllegalStateException();
         else { count++; }
     }
+
+    public void decrement() {
+        assert false : "Not implemented yet";
+    }
 }

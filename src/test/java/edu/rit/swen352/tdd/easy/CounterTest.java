@@ -68,4 +68,15 @@ class CounterTest {
             () -> testCounter.increment());
         assertEquals(10, testCounter.getCount());
     }
+
+    @Test
+    @DisplayName("6a: successfully decrement count")
+    void decrementSuccess() {
+        Counter testCounter = new Counter(5, 10);
+        testCounter.increment();
+        testCounter.increment();
+
+        testCounter.decrement();
+        assertEquals(6, testCounter.getCount());
+    }
 }
