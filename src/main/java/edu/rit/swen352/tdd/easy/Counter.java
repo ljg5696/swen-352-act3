@@ -24,4 +24,48 @@ package edu.rit.swen352.tdd.easy;
  * </ul>
  */
 public class Counter {
+    private int count;
+    private final int lowerLimit;
+    private final int upperLimit;
+    private static final int MAX_INTEGER = 1000;
+
+    public Counter(int lowerLimit, int upperLimit) {
+        this.lowerLimit = lowerLimit;
+        this.upperLimit = upperLimit;
+        count = lowerLimit;
+    }
+
+    public Counter(int lowerLimit) {
+        this.lowerLimit = lowerLimit;
+        this.upperLimit = MAX_INTEGER;
+        count = lowerLimit;
+    }
+
+    public Counter() {
+        this.lowerLimit = 0;
+        this.upperLimit = MAX_INTEGER;
+        count = 0;
+    }
+
+    public int getLowerLimit() {
+        return lowerLimit;
+    }
+
+    public int getUpperLimit() {
+        return upperLimit;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void increment() {
+        if (count >= upperLimit) throw new IllegalStateException();
+        else { count++; }
+    }
+
+    public void decrement() {
+        if (count <= lowerLimit) throw new IllegalStateException();
+        else { count--; }
+    }
 }
