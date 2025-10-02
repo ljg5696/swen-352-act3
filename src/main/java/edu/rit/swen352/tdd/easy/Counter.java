@@ -46,4 +46,9 @@ public class Counter {
         this.upperLimit = MAX_INTEGER;
         count = 0;
     }
+
+    public int getLower() {
+        assert false : "Not implemented yet";
+        return -1;
+    }
 }

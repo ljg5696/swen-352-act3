@@ -30,4 +30,11 @@ class CounterTest {
         Counter testCounter = new Counter();
         assertNotNull(testCounter);
     }
+
+    @Test
+    @DisplayName("2: Get value of lower limit")
+    void getLowerLimit() {
+        Counter testCounter = new Counter(5, 10);
+        assertEquals(5, testCounter.getLower());
+    }
 }
