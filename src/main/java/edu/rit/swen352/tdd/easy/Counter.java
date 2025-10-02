@@ -65,6 +65,6 @@ public class Counter {
     }
 
     public void decrement() {
-        assert false : "Not implemented yet";
+        count--;
     }
 }
