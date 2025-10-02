@@ -12,8 +12,15 @@ class CounterTest {
 
     @Test
     @DisplayName("1a: Construct Counter w/ given lower and upper bounds (-5, 5)")
-    void constructCount() {
+    void constructCounter() {
         Counter testCounter = new Counter(-5, 5);
+        assertNotNull(testCounter);
+    }
+
+    @Test
+    @DisplayName("1b: Construct Counter w/ given lower bound only (-5)")
+    void constructCounterOnlyLower() {
+        Counter testCounter = new Counter(-5);
         assertNotNull(testCounter);
     }
 }

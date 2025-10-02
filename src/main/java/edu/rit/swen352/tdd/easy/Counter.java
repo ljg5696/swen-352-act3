@@ -25,12 +25,16 @@ package edu.rit.swen352.tdd.easy;
  */
 public class Counter {
     private int count;
-    private final int lowerLimit;
-    private final int upperLimit;
+    private /*final*/ int lowerLimit;
+    private /*final*/ int upperLimit;
 
-    public Counter (int lowerLimit, int upperLimit) {
+    public Counter(int lowerLimit, int upperLimit) {
         this.lowerLimit = lowerLimit;
         this.upperLimit = upperLimit;
         count = lowerLimit;
+    }
+
+    public Counter(int lowerLimit) {
+        assert false: "Not implemented yet";
     }
 }
