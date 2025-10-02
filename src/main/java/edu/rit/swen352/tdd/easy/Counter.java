@@ -48,7 +48,6 @@ public class Counter {
     }
 
     public int getLower() {
-        assert false : "Not implemented yet";
-        return -1;
+        return lowerLimit;
     }
 }
