@@ -47,7 +47,12 @@ public class Counter {
         count = 0;
     }
 
-    public int getLower() {
+    public int getLowerLimit() {
         return lowerLimit;
+    }
+
+    public int getUpperLimit() {
+        assert false : "Not implemented yet";
+        return -1;
     }
 }

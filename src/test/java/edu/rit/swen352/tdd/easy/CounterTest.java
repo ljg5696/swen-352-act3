@@ -35,6 +35,13 @@ class CounterTest {
     @DisplayName("2: Get value of lower limit")
     void getLowerLimit() {
         Counter testCounter = new Counter(5, 10);
-        assertEquals(5, testCounter.getLower());
+        assertEquals(5, testCounter.getLowerLimit());
+    }
+
+    @Test
+    @DisplayName("3: Get value of upper limit")
+    void getUpperLimit() {
+        Counter testCounter = new Counter(5, 10);
+        assertEquals(10, testCounter.getUpperLimit());
     }
 }
