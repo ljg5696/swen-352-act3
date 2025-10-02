@@ -13,6 +13,7 @@ class CounterTest {
     @Test
     @DisplayName("1a: Construct Counter w/ given lower and upper bounds (-5, 5)")
     void constructCount() {
-        assertInstanceOf(Counter.class, (new Counter(-5, 5)).getClass());
+        Counter testCounter = new Counter(-5, 5);
+        assertNotNull(testCounter);
     }
 }
