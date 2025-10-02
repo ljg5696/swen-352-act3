@@ -24,4 +24,11 @@ package edu.rit.swen352.tdd.easy;
  * </ul>
  */
 public class Counter {
+    private int count;
+    // private static final int lowerLimit;
+    // private static final int upperLimit;
+
+    public Counter (int lowerLimit, int upperLimit) {
+        assert false: "Not implemented yet";
+    }
 }
