@@ -27,6 +27,7 @@ public class Counter {
     private int count;
     private /*final*/ int lowerLimit;
     private /*final*/ int upperLimit;
+    private static final int MAX_INTEGER = 1000;
 
     public Counter(int lowerLimit, int upperLimit) {
         this.lowerLimit = lowerLimit;
@@ -35,6 +36,8 @@ public class Counter {
     }
 
     public Counter(int lowerLimit) {
-        assert false: "Not implemented yet";
+        this.lowerLimit = lowerLimit;
+        this.upperLimit = MAX_INTEGER;
+        count = lowerLimit;
     }
 }
