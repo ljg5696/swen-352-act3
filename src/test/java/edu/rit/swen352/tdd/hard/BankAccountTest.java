@@ -61,12 +61,13 @@ class BankAccountTest {
         assertEquals(new Money(6, 23), testAccount.getBalance());
     }
 
-    /*
+    
     @Test
     @DisplayName("5a: Withdrawing an amount less than/equal to current balance")
     void withdrawSuccess() {
         BankAccount testAccount = new BankAccount(new Money(12, 0));
-        testAccount.withdraw()
+        testAccount.withdraw(new Money(6, 0));
+        assertEquals(new Money(6, 0), testAccount.getBalance());
     }
-    */
+    
 }

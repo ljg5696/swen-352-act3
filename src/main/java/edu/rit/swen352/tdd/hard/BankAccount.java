@@ -54,4 +54,8 @@ public class BankAccount {
         this.balance = new Money(adjustedDollars, adjustedCents);
     }
 
+    public void withdraw(Money amount) {
+        assert false : "Not implemented yet";
+    }
+
 }
