@@ -31,4 +31,11 @@ class BankAccountTest {
         assertEquals(new Money(150, 31), testAccount.getBalance());
     }
 
+    @Test
+    @DisplayName("3a: Checking if an account with balance 0 is empty")
+    void isEmptyBalanceZero() {
+        BankAccount testAccount = new BankAccount();
+        assertTrue(testAccount.isAccountEmpty());
+    }
+
 }
