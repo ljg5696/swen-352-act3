@@ -53,4 +53,20 @@ class BankAccountTest {
         assertEquals(new Money(5, 32), testAccount.getBalance());
     }
 
+    @Test
+    @DisplayName("4b: Depositing an amount of cents into balance that equals/exceeds 100")
+    void depositCentsOverflow() {
+        BankAccount testAccount = new BankAccount(new Money(5, 91));
+        testAccount.deposit(new Money(0, 32));
+        assertEquals(new Money(6, 23), testAccount.getBalance());
+    }
+
+    /*
+    @Test
+    @DisplayName("5a: Withdrawing an amount less than/equal to current balance")
+    void withdrawSuccess() {
+        BankAccount testAccount = new BankAccount(new Money(12, 0));
+        testAccount.withdraw()
+    }
+    */
 }
