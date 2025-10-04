@@ -46,7 +46,7 @@ public class BankAccount {
     }
 
     public void deposit(Money amount) {
-        assert false : "Not implemented yet";
+        this.balance = new Money((this.balance.dollars() + amount.dollars()), (this.balance.cents() + amount.cents()));
     }
 
 }
