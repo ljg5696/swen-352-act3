@@ -13,7 +13,7 @@ class BankAccountTest {
     @Test
     @DisplayName("1a: Construct BankAccount with given initial balance")
     void constructBankAccount() {
-        BankAccount testAccount = new BankAccount(new Money());
+        BankAccount testAccount = new BankAccount(new Money(1000, 0));
         assertNotNull(testAccount);
     }
 
