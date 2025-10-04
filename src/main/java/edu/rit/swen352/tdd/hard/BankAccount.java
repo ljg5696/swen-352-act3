@@ -38,8 +38,7 @@ public class BankAccount {
     }
 
     public Money getBalance() {
-        assert false : "Not implemented yet";
-        return null;
+        return this.balance;
     }
 
 }
