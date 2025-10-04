@@ -55,7 +55,16 @@ public class BankAccount {
     }
 
     public void withdraw(Money amount) {
-        this.balance = new Money(this.balance.dollars() - amount.dollars(), this.balance.cents() - amount.cents());
+        int totalDollars = this.balance.dollars() - amount.dollars();
+        int totalCents = this.balance.cents() - amount.cents();
+
+        int adjustedDollars = totalDollars;
+        int adjustedCents = totalCents;
+        if (totalCents < 0) {
+            adjustedDollars = totalDollars - 1;
+            adjustedCents = 100 + totalCents;
+        }
+        this.balance = new Money(adjustedDollars, adjustedCents);
     }
 
 }
