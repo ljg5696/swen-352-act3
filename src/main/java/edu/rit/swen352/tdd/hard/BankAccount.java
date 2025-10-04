@@ -45,4 +45,8 @@ public class BankAccount {
         return (this.balance).equals(new Money(0, 0));
     }
 
+    public void deposit(Money amount) {
+        assert false : "Not implemented yet";
+    }
+
 }

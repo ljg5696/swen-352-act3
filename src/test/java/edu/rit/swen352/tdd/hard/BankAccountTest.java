@@ -45,4 +45,12 @@ class BankAccountTest {
         assertFalse(testAccount.isAccountEmpty());
     }
 
+    @Test
+    @DisplayName("4: Depositing a given amount into the balance")
+    void depositIntoAccount() {
+        BankAccount testAccount = new BankAccount();
+        testAccount.deposit(new Money(5, 32));
+        assertEquals(new Money(5, 32), testAccount.getBalance());
+    }
+
 }
