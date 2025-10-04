@@ -46,7 +46,12 @@ public class BankAccount {
     }
 
     public void deposit(Money amount) {
-        this.balance = new Money((this.balance.dollars() + amount.dollars()), (this.balance.cents() + amount.cents()));
+        int totalDollars = amount.dollars() + this.balance.dollars();
+        int totalCents = amount.cents() + this.balance.cents();
+
+        int adjustedDollars = totalDollars + (totalCents / 100);
+        int adjustedCents = totalCents % 100;
+        this.balance = new Money(adjustedDollars, adjustedCents);
     }
 
 }
