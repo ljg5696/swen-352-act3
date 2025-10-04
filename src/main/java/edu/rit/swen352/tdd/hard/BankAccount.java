@@ -42,8 +42,7 @@ public class BankAccount {
     }
 
     public Boolean isAccountEmpty() {
-        assert false : "Not implemented yet";
-        return null;
+        return (this.balance).equals(new Money(0, 0));
     }
 
 }
