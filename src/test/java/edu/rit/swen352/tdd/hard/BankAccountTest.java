@@ -10,4 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class BankAccountTest {
 
+    @Test
+    @DisplayName("1a: Construct BankAccount with given initial balance")
+    void constructBankAccount() {
+        BankAccount testAccount = new BankAccount(new Money());
+        assertNotNull(testAccount);
+    }
+
 }
