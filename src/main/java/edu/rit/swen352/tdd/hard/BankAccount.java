@@ -27,7 +27,7 @@ record Money(int dollars, int cents) {}
  */
 public class BankAccount {
 
-    Money balance;
+    private Money balance;
 
     public BankAccount(Money balance) {
         this.balance = balance;
@@ -35,6 +35,11 @@ public class BankAccount {
 
     public BankAccount() {
         this.balance = new Money(0, 0);
+    }
+
+    public Money getBalance() {
+        assert false : "Not implemented yet";
+        return null;
     }
 
 }

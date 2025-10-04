@@ -24,4 +24,11 @@ class BankAccountTest {
         assertNotNull(testAccount);
     }
 
+    @Test
+    @DisplayName("2: Get current balance of the account")
+    void getTestAccountBalance() {
+        BankAccount testAccount = new BankAccount(new Money(150, 31));
+        assertEquals(new Money(150, 31), testAccount.getBalance());
+    }
+
 }
