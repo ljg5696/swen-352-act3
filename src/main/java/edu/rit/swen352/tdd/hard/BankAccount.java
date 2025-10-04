@@ -30,7 +30,7 @@ public class BankAccount {
     Money balance;
 
     public BankAccount(Money balance) {
-        assert false : "Not implemented yet";
+        this.balance = balance;
     }
 
 }
