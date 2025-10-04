@@ -17,4 +17,11 @@ class BankAccountTest {
         assertNotNull(testAccount);
     }
 
+    @Test
+    @DisplayName("1b: Construct BankAccount with no given initial balance")
+    void constructEmptyBankAccount() {
+        BankAccount testAccount = new BankAccount();
+        assertNotNull(testAccount);
+    }
+
 }
