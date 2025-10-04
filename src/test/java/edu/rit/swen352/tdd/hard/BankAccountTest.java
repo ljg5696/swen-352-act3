@@ -68,5 +68,13 @@ class BankAccountTest {
         testAccount.withdraw(new Money(6, 0));
         assertEquals(new Money(6, 0), testAccount.getBalance());
     }
+
+    @Test
+    @DisplayName("5b: Withdrawing an amount of cents from balance that results in negative number of cents in balance")
+    void withdrawCentsUnderflow() {
+        BankAccount testAccount = new BankAccount(new Money(12, 10));
+        testAccount.withdraw(new Money(0, 20));
+        assertEquals(new Money(11, 90), testAccount.getBalance());
+    }
     
 }
