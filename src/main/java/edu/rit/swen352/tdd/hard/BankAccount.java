@@ -4,7 +4,7 @@ package edu.rit.swen352.tdd.hard;
  * A Value Object for American monetary values with fixed integer
  * values for dollars and cents.
  */
-record Money() {}
+record Money(int dollars, int cents) {}
 
 /**
  * An American bank account that permits deposits and withdrawals.
@@ -34,7 +34,7 @@ public class BankAccount {
     }
 
     public BankAccount() {
-        assert false : "Not implemented yet";
+        this.balance = new Money(0, 0);
     }
 
 }
