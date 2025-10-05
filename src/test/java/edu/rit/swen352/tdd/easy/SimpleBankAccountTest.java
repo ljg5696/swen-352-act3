@@ -31,4 +31,12 @@ class SimpleBankAccountTest {
         SimpleBankAccount account = new SimpleBankAccount(150.0f);
         assertEquals(150.0f, account.getBalance());
     }
+
+
+    @Test
+    @DisplayName("isAccountEmpty returns true when balance is zero")
+    void testIsAccountEmptyWhenZero() {
+        SimpleBankAccount account = new SimpleBankAccount(0.00f);
+        assertEquals(true, account.isAccountEmpty());
+    }
 }

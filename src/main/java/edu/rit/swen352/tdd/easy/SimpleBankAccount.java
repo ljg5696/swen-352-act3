@@ -39,7 +39,7 @@ public class SimpleBankAccount {
         
     }
 
-    public void isAccountEmpty(){
-        
+    public boolean isAccountEmpty(){
+        throw new UnsupportedOperationException();
     }
 }
