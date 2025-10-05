@@ -22,6 +22,7 @@ public class Temperature {
   private TemperatureUnit unit;
   private final double ABSOLUTE_ZERO_KELVIN = 0;
   private final double ABSOLUTE_ZERO_CELSIUS = -273.15;
+  private final double ABSOLUTE_ZERO_Fahrenheit = -459.67;
   
 
   public enum TemperatureUnit {
@@ -36,6 +37,10 @@ public class Temperature {
       throw new IllegalArgumentException("Temperature cannot be below absolute zero");
     }
     else if(value < ABSOLUTE_ZERO_CELSIUS && unit == TemperatureUnit.CELSIUS){
+      throw new IllegalArgumentException("Temperature cannot be below absolute zero");
+
+    }
+    else if(value < ABSOLUTE_ZERO_Fahrenheit && unit == TemperatureUnit.FAHRENHEIT){
       throw new IllegalArgumentException("Temperature cannot be below absolute zero");
 
     }

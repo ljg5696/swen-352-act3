@@ -51,7 +51,7 @@ class TemperatureTest {
     public void absoluteZeroFahrenheitTest(){
 
         Exception exception = assertThrows(Exception.class,
-        () -> new Temperature(-274, TemperatureUnit.FAHRENHEIT));
+        () -> new Temperature(-460, TemperatureUnit.FAHRENHEIT));
         assertEquals("Temperature cannot be below absolute zero", exception.getMessage());
         
     }
