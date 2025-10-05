@@ -56,4 +56,11 @@ public class Temperature {
     this.value = value;
     this.unit =  TemperatureUnit.CELSIUS;
   }
+
+  public void getTempUnit(){assert false: "Not implemented yet";}
+  
+  public void convertTo(TemperatureUnit unit){
+
+    assert false: "Not implemented yet";
+  }
 }

@@ -55,4 +55,12 @@ class TemperatureTest {
         assertEquals("Temperature cannot be below absolute zero", exception.getMessage());
         
     }
+
+    @Test
+    @DisplayName("2a: Create a new temperature with the new converted unit")
+    public void convertToTest(){
+        Temperature temp = new Temperature(32, TemperatureUnit.CELSIUS);
+        temp.getTempUnit() = convertTo(TemperatureUnit.Fahrenheit); 
+        assertEquals(TemperatureUnit.FAHRENHEIT, temp.getTempUnit());
+    }
 }
