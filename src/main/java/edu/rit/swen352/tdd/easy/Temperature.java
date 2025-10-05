@@ -49,7 +49,11 @@ public class Temperature {
     }
 
     }
+  
+  public Temperature(){
+   
 
+  }
   
   public Temperature(double value){
 
@@ -57,10 +61,17 @@ public class Temperature {
     this.unit =  TemperatureUnit.CELSIUS;
   }
 
-  public void getTempUnit(){assert false: "Not implemented yet";}
-  
-  public void convertTo(TemperatureUnit unit){
+  public TemperatureUnit getTempUnit(){return unit;}
 
-    assert false: "Not implemented yet";
-  }
+  public double getValue(){return value;}
+  
+  public void convertTo(TemperatureUnit temp_unit){
+
+    
+    this.unit = temp_unit;
+    
+
+    }
+  
 }
+
