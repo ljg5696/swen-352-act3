@@ -22,13 +22,13 @@ package edu.rit.swen352.tdd.easy;
 public class SimpleBankAccount {
     private float balance; 
     
-    public SimpleBankAccount() {
-        this.balance = 0.00f;
+    public SimpleBankAccount(float initialBalance) {
+        this.balance = initialBalance;
     }
     
 
     public float getBalance() {
-       return balance;
+        return 0.00f;
     }
 
     public void withdraw(float amount){
