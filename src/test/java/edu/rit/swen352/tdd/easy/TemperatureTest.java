@@ -27,4 +27,12 @@ class TemperatureTest {
         assertNotNull(temp2);
 
     }
+
+    @Test
+    @DisplayName("1c: Construct Temperature with value that goes below Absolute zero")
+    public void absoluteZeroTest(){
+
+        Temperature absZero= new Temperature(0, TemperatureUnit.KELVIN);
+        assertNull(absZero);
+    }
 }
