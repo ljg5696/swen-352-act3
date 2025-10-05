@@ -76,5 +76,14 @@ class BankAccountTest {
         testAccount.withdraw(new Money(0, 20));
         assertEquals(new Money(11, 90), testAccount.getBalance());
     }
+
+    @Test
+    @DisplayName("5c: Withdrawing more than is in the current balance")
+    void withdrawUnsuccessful() {
+        BankAccount testAccount = new BankAccount(new Money(12, 0));
+        assertThrows(IllegalArgumentException.class,
+            () -> testAccount.withdraw(new Money(15, 0)));
+        assertEquals(new Money(12, 0), testAccount.getBalance());
+    }
     
 }
