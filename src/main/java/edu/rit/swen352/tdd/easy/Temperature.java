@@ -20,6 +20,8 @@ public class Temperature {
 
   private double value;
   private TemperatureUnit unit;
+  private final double ABSOLUTE_ZERO_KELVIN = 0;
+  
 
   public enum TemperatureUnit {
     CELSIUS, FAHRENHEIT, KELVIN;
@@ -27,11 +29,18 @@ public class Temperature {
 
   public Temperature(double value, TemperatureUnit unit){
     
-    this.value = value;
     this.unit = unit;
     
+   if(value < ABSOLUTE_ZERO_KELVIN && unit == TemperatureUnit.KELVIN){
+      throw new IllegalArgumentException("Temperature cannot be below absolute zero");
+    }
+    else{
+      this.value = value;
+    }
 
-  }
+    }
+
+  
   public Temperature(double value){
 
     this.value = value;
