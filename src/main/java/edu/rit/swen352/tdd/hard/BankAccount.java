@@ -64,7 +64,8 @@ public class BankAccount {
             adjustedDollars = totalDollars - 1;
             adjustedCents = 100 + totalCents;
         }
-        this.balance = new Money(adjustedDollars, adjustedCents);
+        if (adjustedDollars < 0) throw new IllegalArgumentException();
+        else { this.balance = new Money(adjustedDollars, adjustedCents); }
     }
 
 }
