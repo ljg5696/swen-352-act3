@@ -15,7 +15,7 @@ class TemperatureTest {
     @Test
     @DisplayName("1a: Construct Temperature w value 55, unit Fahrenheit")
     public void TempConstructorTest(){
-        assertInstanceOf(Temperature.class, new Temperature(55, TemperatureUnit.FAHRENHEIT).getClass());
-        
+        Temperature temp = new Temperature(55, TemperatureUnit.FAHRENHEIT);
+        assertNotNull(temp);        
     }
 }

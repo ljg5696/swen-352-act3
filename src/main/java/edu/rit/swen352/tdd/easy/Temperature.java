@@ -17,12 +17,18 @@ package edu.rit.swen352.tdd.easy;
  * </ul>
  */
 public class Temperature {
+
+  private double value;
+  private TemperatureUnit unit;
+
   public enum TemperatureUnit {
     CELSIUS, FAHRENHEIT, KELVIN;
   }
 
   public Temperature(double value, TemperatureUnit unit){
-    assert false: "Not Implemented yet";
+    
+    this.value = value;
+    this.unit = unit;
 
   }
 }
