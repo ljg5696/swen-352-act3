@@ -28,7 +28,7 @@ public class SimpleBankAccount {
     
 
     public float getBalance() {
-        return 0.00f;
+        return balance;
     }
 
     public void withdraw(float amount){
