@@ -20,4 +20,9 @@ public class Temperature {
   public enum TemperatureUnit {
     CELSIUS, FAHRENHEIT, KELVIN;
   }
+
+  public Temperature(double value, TemperatureUnit unit){
+    assert false: "Not Implemented yet";
+
+  }
 }
