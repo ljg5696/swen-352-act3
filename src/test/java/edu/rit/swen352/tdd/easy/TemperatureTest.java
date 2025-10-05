@@ -46,4 +46,13 @@ class TemperatureTest {
         assertEquals("Temperature cannot be below absolute zero", exception.getMessage());
         
     }
+    @Test
+    @DisplayName("1e: Construct Temperature with value that goes below Absolute zero Fahrenheit")
+    public void absoluteZeroFahrenheitTest(){
+
+        Exception exception = assertThrows(Exception.class,
+        () -> new Temperature(-274, TemperatureUnit.FAHRENHEIT));
+        assertEquals("Temperature cannot be below absolute zero", exception.getMessage());
+        
+    }
 }
