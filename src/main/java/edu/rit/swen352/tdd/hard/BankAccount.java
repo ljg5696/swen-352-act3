@@ -4,7 +4,7 @@ package edu.rit.swen352.tdd.hard;
  * A Value Object for American monetary values with fixed integer
  * values for dollars and cents.
  */
-record Money() {}
+record Money(int dollars, int cents) {}
 
 /**
  * An American bank account that permits deposits and withdrawals.
@@ -26,5 +26,46 @@ record Money() {}
  * </ul>
  */
 public class BankAccount {
+
+    private Money balance;
+
+    public BankAccount(Money balance) {
+        this.balance = balance;
+    }
+
+    public BankAccount() {
+        this.balance = new Money(0, 0);
+    }
+
+    public Money getBalance() {
+        return this.balance;
+    }
+
+    public Boolean isAccountEmpty() {
+        return (this.balance).equals(new Money(0, 0));
+    }
+
+    public void deposit(Money amount) {
+        int totalDollars = amount.dollars() + this.balance.dollars();
+        int totalCents = amount.cents() + this.balance.cents();
+
+        int adjustedDollars = totalDollars + (totalCents / 100);
+        int adjustedCents = totalCents % 100;
+        this.balance = new Money(adjustedDollars, adjustedCents);
+    }
+
+    public void withdraw(Money amount) {
+        int totalDollars = this.balance.dollars() - amount.dollars();
+        int totalCents = this.balance.cents() - amount.cents();
+
+        int adjustedDollars = totalDollars;
+        int adjustedCents = totalCents;
+        if (totalCents < 0) {
+            adjustedDollars = totalDollars - 1;
+            adjustedCents = 100 + totalCents;
+        }
+        if (adjustedDollars < 0) throw new IllegalArgumentException();
+        else { this.balance = new Money(adjustedDollars, adjustedCents); }
+    }
 
 }
