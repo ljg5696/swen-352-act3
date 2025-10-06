@@ -56,4 +56,12 @@ class MyListTest {
         assertEquals("Index is outside the size of the list", exception.getMessage());
     }
 
+    @Test
+    @DisplayName("5a: test for adding an element to the end of the list")
+    public void addOneTest(){
+        MyList<Integer> list = new MyList<>();
+        list.add(1);
+        assertEquals(1, list.get(0));
+    
+    }
 }

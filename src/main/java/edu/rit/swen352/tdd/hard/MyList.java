@@ -57,4 +57,9 @@ public class MyList<T> {
         }
         return (T) elements[index];
     }
+
+    public void add(T element){
+
+        throw new UnsupportedOperationException("Not yet implemented yet");
+    }
 }
