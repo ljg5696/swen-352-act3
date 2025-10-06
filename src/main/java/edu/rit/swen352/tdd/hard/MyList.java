@@ -59,7 +59,9 @@ public class MyList<T> {
     }
 
     public void add(T element){
-
+        if(element == null){
+            throw new IllegalArgumentException("Cannot add null values");
+        }
         elements[size++] = element;
     }
 }
