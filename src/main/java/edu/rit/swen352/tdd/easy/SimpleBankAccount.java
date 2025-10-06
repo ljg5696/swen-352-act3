@@ -36,7 +36,7 @@ public class SimpleBankAccount {
     }
 
     public void deposit(float amount){
-        
+        this.balance += amount;
     }
 
     public boolean isAccountEmpty(){
