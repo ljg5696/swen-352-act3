@@ -42,7 +42,8 @@ class MyListTest {
     @DisplayName("4a: test for getting an element in the list at a specific index")
     public void getElementTest(){
         MyList<Integer> list = new MyList<>();
-        assertEquals(null, list.get(0));
+        list.add(1);
+        assertEquals(1, list.get(0));
 
     }
 

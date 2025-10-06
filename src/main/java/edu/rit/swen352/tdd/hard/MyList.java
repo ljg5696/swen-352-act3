@@ -51,7 +51,7 @@ public class MyList<T> {
     }
     
     public T get(int index){
-        if(index < 0  || index > size){
+        if(index < 0  || index >= size){
 
             throw new NoSuchElementException("Index is outside the size of the list");
         }
@@ -66,6 +66,9 @@ public class MyList<T> {
     }
 
     public void remove(int index){
+        if(index < 0 || index >= size){
+            throw new NoSuchElementException("Index is outside the size of the list");
+        }
         System.arraycopy(elements, index + 1, elements, index, size - index -1);
         elements[--size] = null;
 
