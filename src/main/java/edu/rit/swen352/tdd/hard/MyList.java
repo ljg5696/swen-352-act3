@@ -51,6 +51,7 @@ public class MyList<T> {
 
     }
     
+    @SuppressWarnings("unchecked")
     public T get(int index){
         if(index < 0  || index >= size){
 
@@ -74,9 +75,12 @@ public class MyList<T> {
         elements[--size] = null;
 
     }
-    public void forEach(MyList<T> list,Consumer<T> action){
+    public void forEach(Consumer<T> action){
+        for(int i = 0; i < size; i++){
+            @SuppressWarnings("unchecked")
+            T element = (T) elements[i];
+            action.accept(element);
 
-        throw new UnsupportedOperationException("Not implemented yet");
-
+        }
     }
 }
