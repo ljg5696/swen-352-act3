@@ -60,6 +60,6 @@ public class MyList<T> {
 
     public void add(T element){
 
-        throw new UnsupportedOperationException("Not yet implemented yet");
+        elements[size++] = element;
     }
 }
