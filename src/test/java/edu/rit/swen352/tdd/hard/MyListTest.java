@@ -74,4 +74,15 @@ class MyListTest {
         assertEquals("Cannot add null values", exception.getMessage());
 
     }
+
+    @Test
+    @DisplayName("6: test for removing an element at a specific index")
+    public void removeTest(){
+        MyList<Integer> list = new MyList<>();
+        list.add(1);
+        list.add(2);
+        list.remove(1);
+        assertEquals(1, list.size());
+
+    }
 }

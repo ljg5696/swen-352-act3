@@ -64,4 +64,9 @@ public class MyList<T> {
         }
         elements[size++] = element;
     }
+
+    public void remove(int index){
+        throw new UnsupportedOperationException("Not yet implemented");
+
+    }
 }
