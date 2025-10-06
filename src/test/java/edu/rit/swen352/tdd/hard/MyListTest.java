@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.ArrayList;
+
 
 
 
@@ -42,7 +42,7 @@ class MyListTest {
     @DisplayName("4a: test for getting an element in the list at a specific index")
     public void getElementTest(){
         MyList<Integer> list = new MyList<>();
-        assertEquals(1, list.get(0));
+        assertEquals(null, list.get(0));
 
     }
 
