@@ -20,4 +20,12 @@ class MyListTest {
 
     }
 
+    @Test
+    @DisplayName("2a: test for checking if list is empty return true")
+    public void isEmptyTrueTest(){
+        MyList<Integer> list = new MyList<>();
+        assertEquals(true, list.isEmpty());
+
+    }
+
 }
