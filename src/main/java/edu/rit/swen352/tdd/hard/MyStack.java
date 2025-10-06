@@ -18,8 +18,23 @@ package edu.rit.swen352.tdd.hard;
  * @param <T> the type of elements in the stack.
  */
 public class MyStack<T> {
+    private Object[] elements;  
+    private int size;           
+    private int capacity;   
+
+    public MyStack() {
+        this.capacity = 16;
+        this.elements = new Object[capacity];
+        this.size = 0;
+    }
+
     public MyStack(int capacity) {
-        throw new UnsupportedOperationException("NYI");
+        if (capacity <= 0) {
+            throw new IllegalArgumentException("Capacity must be positive");
+        }
+        this.capacity = capacity;
+        this.elements = new Object[capacity];
+        this.size = 0;
     }
 
 }
