@@ -42,7 +42,7 @@ public class MyStack<T> {
     }
 
     public boolean isEmpty() {
-        throw new UnsupportedOperationException("NYI");
+        return size == 0;
     }
 
 }
