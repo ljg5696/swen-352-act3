@@ -30,4 +30,13 @@ public class MyList<T> {
         this.size = 0;
         
     }
+
+    public MyList(int capacity){
+        if(capacity < 0){
+            throw new IllegalArgumentException("Capacity cannot be below 0");
+        }
+        this.elements = new Object[capacity];
+        this.size = 0; 
+
+    }
 }
