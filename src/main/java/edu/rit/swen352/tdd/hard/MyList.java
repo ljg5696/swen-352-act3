@@ -66,7 +66,8 @@ public class MyList<T> {
     }
 
     public void remove(int index){
-        throw new UnsupportedOperationException("Not yet implemented");
+        System.arraycopy(elements, index + 1, elements, index, size - index -1);
+        elements[--size] = null;
 
     }
 }
