@@ -64,4 +64,14 @@ class MyListTest {
         assertEquals(1, list.get(0));
     
     }
+
+    @Test
+    @DisplayName("5b: test for adding null value to end of the list")
+    public void addNullTest(){
+        MyList<Integer> list = new MyList<>();
+        Exception exception = assertThrows(Exception.class,
+        () -> list.add(null));
+        assertEquals("Cannot add null values", exception.getMessage());
+
+    }
 }
