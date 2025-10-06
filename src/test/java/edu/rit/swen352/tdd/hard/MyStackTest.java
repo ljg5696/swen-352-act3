@@ -22,4 +22,11 @@ class MyStackTest {
         MyStack<Integer> stack = new MyStack<>();
         assertEquals(16, stack.getCapacity());
     }
+
+    @Test
+    @DisplayName("getCapacity returns provided capacity")
+    void testGetCapacity() {
+        MyStack<Integer> stack = new MyStack<>(5);
+        assertEquals(5, stack.getCapacity());
+    }
 }
