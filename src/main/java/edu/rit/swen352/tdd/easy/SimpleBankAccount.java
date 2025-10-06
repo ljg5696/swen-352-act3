@@ -40,6 +40,6 @@ public class SimpleBankAccount {
     }
 
     public boolean isAccountEmpty(){
-        throw new UnsupportedOperationException();
+        return balance <= 0.00f;
     }
 }
