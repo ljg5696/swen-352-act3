@@ -9,5 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
  * Test suite for the {@link MyStack} component.
  */
 class MyStackTest {
-
+    @Test
+    @DisplayName("Constructor with capacity returns non-null")
+    void testConstructorWithCapacityNotNull() {
+        MyStack<Integer> stack = new MyStack<>(5);
+        assertNotNull(stack);
+    }
 }

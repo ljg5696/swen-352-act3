@@ -18,4 +18,8 @@ package edu.rit.swen352.tdd.hard;
  * @param <T> the type of elements in the stack.
  */
 public class MyStack<T> {
+    public MyStack(int capacity) {
+        throw new UnsupportedOperationException("NYI");
+    }
+
 }
