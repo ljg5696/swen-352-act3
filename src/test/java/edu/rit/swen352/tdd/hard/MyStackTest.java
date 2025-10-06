@@ -37,5 +37,14 @@ class MyStackTest {
         assertEquals(true, stack.isEmpty());
     }
 
+    @Test
+    @DisplayName("size reflects number of elements in the stacks")
+    void testSizeAfterPushes() {
+        MyStack<Integer> stack = new MyStack<>(5);
+        stack.push(1);
+        stack.push(2);
+        assertEquals(2, stack.size());
+    }
+
 
 }

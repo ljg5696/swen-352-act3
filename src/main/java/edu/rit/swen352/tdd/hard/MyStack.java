@@ -45,4 +45,12 @@ public class MyStack<T> {
         return size == 0;
     }
 
+    public int size() {
+        throw new UnsupportedOperationException();
+    }
+
+    public void push(T element) {
+        throw new UnsupportedOperationException();
+    }
+
 }
