@@ -1,0 +1,89 @@
+commit 2441453a3aba6cec713368db05f01f9554c72320
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 19:26:09 2025 -0400
+
+    Temperature: 2a: create a new tempereature with new converted unit: create passing test
+
+commit 92a658d354ffcbb5e65c698f472c7045bd2a30a9
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 16:57:28 2025 -0400
+
+    Temperature: 2a: create a new tempereature with new converted unit: create failing test
+
+commit 88a0a616a6daf3cf5a0e5baf0a6a6f7ea788478c
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 14:50:35 2025 -0400
+
+    Temperature: 1e: construct a Temperature with absolute zero Fahrenheit  value: create passing test
+
+commit f14c847b3182da1096130072219594eee10d8554
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 14:48:26 2025 -0400
+
+    Temperature: 1e: construct a Temperature with absolute zero Fahrenheit  value: create failing test
+
+commit a8fd0d9abb435a25e7e18236167df6bf9a7a2292
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 14:40:14 2025 -0400
+
+    Temperature: 1d: construct a Temperature with absolute zero celsius value: create passing test
+
+commit cc153273898cfb11eb37d9be91d12f380bad1f95
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 13:57:04 2025 -0400
+
+    Temperature: 1d: construct a Temperature with absolute zero celsius value: create failing test
+
+commit 5737f67124a7cadc81ba6ddd562ad013dc1805d1
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 13:43:06 2025 -0400
+
+    Temperature: 1c: construct a Temperature with absolute zero value: create passing test
+
+commit faa7698ce07e5013159884aa3d59c2dd0a0df184
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 12:44:53 2025 -0400
+
+    Temperature: 1c: construct a Temperature with absolute zero value: create failing test
+
+commit 6da7a090489c348de974b1c00379b1fa93a363bb
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 12:32:20 2025 -0400
+
+    Temperature: 1b: construct a Temperature with only a given value: create passing test
+
+commit b96683e0acce00dc1cbb11a4ad7b137ea605dab2
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 12:22:48 2025 -0400
+
+    Temperature: 1b: construct a Temperature with only a given value: create failing test
+
+commit d2b0152c04f55151771c17784a0443c7461d4ba6
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 12:12:15 2025 -0400
+
+    Temperature: 1a: construct a Temperature with give value and temperature unit: create passing code
+
+commit cf9135b9542b7881247c404258fd57a7b4d03599
+Author: 404DK <dkiir5949@gmail.com>
+Date:   Sun Oct 5 12:00:44 2025 -0400
+
+    failed test 1a
+
+commit bdf3b4d6ce7297098432c6e7f62f2aadfc836d29
+Author: your.user.name <grover037nona@icloud.com>
+Date:   Tue Sep 30 08:40:44 2025 -0400
+
+    .mvn and src directories set up
+
+commit c0d195db6a76744f06f3ce983c6f3e7015c35147
+Author: your.user.name <grover037nona@icloud.com>
+Date:   Tue Sep 30 08:16:46 2025 -0400
+
+    created .gitignore
+
+commit e891e18b941ff64fbe2c147959b8c6be932ab6d0
+Author: ljg5696 <ljg5696@g.rit.edu>
+Date:   Tue Sep 30 08:12:00 2025 -0400
+
+    First setup

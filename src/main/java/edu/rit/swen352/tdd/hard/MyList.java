@@ -19,4 +19,9 @@ package edu.rit.swen352.tdd.hard;
  * @param <T> the type of elements in the list.
  */
 public class MyList<T> {
+
+    public MyList(){
+
+        assert false: "Not implemented yet";
+    }
 }
