@@ -1,5 +1,7 @@
 package edu.rit.swen352.tdd.hard;
 
+
+
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
  *
@@ -19,9 +21,13 @@ package edu.rit.swen352.tdd.hard;
  * @param <T> the type of elements in the list.
  */
 public class MyList<T> {
+    private Object[] elements;
+    private int size;
+
 
     public MyList(){
-
-        assert false: "Not implemented yet";
+        this.elements = new Object[10];
+        this.size = 0;
+        
     }
 }
