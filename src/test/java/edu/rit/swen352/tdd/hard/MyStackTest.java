@@ -17,7 +17,7 @@ class MyStackTest {
     }
 
     @Test
-    @DisplayName("No-arg constructor defaults capacity to 16")
+    @DisplayName("No argument constructor defaults capacity to 16")
     void testNoArgConstructorDefaultCapacity() {
         MyStack<Integer> stack = new MyStack<>();
         assertEquals(16, stack.getCapacity());

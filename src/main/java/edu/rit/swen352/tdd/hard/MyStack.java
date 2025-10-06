@@ -37,4 +37,8 @@ public class MyStack<T> {
         this.size = 0;
     }
 
+    public int getCapacity() {
+        return capacity;
+    }
+
 }
