@@ -85,4 +85,15 @@ class MyListTest {
         assertEquals(1, list.size());
 
     }
+    @Test
+    @DisplayName("6b: test for removing an element at a index outside the size")
+    public void removeOutOfBoundsIndexTest(){
+        MyList<Integer> list = new MyList<>();
+        list.add(1);
+        list.add(2);
+        Exception exception = assertThrows(Exception.class,
+        () -> list.remove(2));
+        assertEquals("Index is outside the size of the list", exception.getMessage());
+
+    }
 }
