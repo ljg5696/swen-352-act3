@@ -54,6 +54,14 @@ class MyStackTest {
         assertEquals(1, stack.size());
     }
 
-    
+    @Test
+    @DisplayName("push increases size by one")
+    void testPushCorrectvalue() {
+        MyStack<String> stack = new MyStack<>(5);
+        stack.push("Test");
+        assertEquals("Test", stack.pop());
+    }
+
+
 
 }

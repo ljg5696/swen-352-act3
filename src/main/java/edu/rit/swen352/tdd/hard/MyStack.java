@@ -50,7 +50,21 @@ public class MyStack<T> {
     }
 
     public void push(T element) {
-        size += 1;
+        if (size == capacity) {
+            throw new IllegalStateException("Stack full");
+        }
+        elements[size] = element; 
+        size++; 
+    }
+
+    public T pop() {
+        if (size == 0) {
+            throw new java.util.NoSuchElementException();
+        }
+        size--;                     
+        T element = (T) elements[size];
+        elements[size] = null;      
+        return element;
     }
 
 }
