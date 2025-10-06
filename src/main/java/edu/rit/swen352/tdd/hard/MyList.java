@@ -1,6 +1,7 @@
 package edu.rit.swen352.tdd.hard;
 
 import java.util.NoSuchElementException;
+import java.util.function.Consumer;
 
 /**
  * MyList is a flexible-sized sequence of elements with no gaps.
@@ -71,6 +72,11 @@ public class MyList<T> {
         }
         System.arraycopy(elements, index + 1, elements, index, size - index -1);
         elements[--size] = null;
+
+    }
+    public void forEach(MyList<T> list,Consumer<T> action){
+
+        throw new UnsupportedOperationException("Not implemented yet");
 
     }
 }

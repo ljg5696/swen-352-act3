@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Arrays;
+
 
 
 
@@ -96,5 +98,17 @@ class MyListTest {
         () -> list.remove(2));
         assertEquals("Index is outside the size of the list", exception.getMessage());
 
+    }
+
+    @Test
+    @DisplayName("7: test case for forEach method")
+    public void forEachTest(){
+
+        MyList<Integer> list = new MyList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.forEach(list, numbers -> list.add(numbers * 2));
+        assertEquals(Arrays.asList(2,4,6), list);
     }
 }
