@@ -62,7 +62,14 @@ class MyStackTest {
         assertEquals("Test", stack.pop());
     }
 
-    
+    @Test
+    @DisplayName("pop returns the last pushed element")
+    void testPopReturnsLastPushed() {
+        MyStack<Integer> stack = new MyStack<>(5);
+        stack.push(10);
+        stack.push(20);
+        assertEquals(20, stack.pop());
+    }
 
 
 
