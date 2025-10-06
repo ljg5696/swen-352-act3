@@ -29,4 +29,5 @@ class MyStackTest {
         MyStack<Integer> stack = new MyStack<>(5);
         assertEquals(5, stack.getCapacity());
     }
+    
 }
