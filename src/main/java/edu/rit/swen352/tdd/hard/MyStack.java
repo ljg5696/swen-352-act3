@@ -59,7 +59,7 @@ public class MyStack<T> {
 
     public T pop() {
         if (size == 0) {
-            throw new java.util.NoSuchElementException();
+            return null;
         }
         size--;                     
         T element = (T) elements[size];

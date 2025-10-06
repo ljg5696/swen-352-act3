@@ -71,7 +71,14 @@ class MyStackTest {
         assertEquals(20, stack.pop());
     }
 
+    @Test
+    @DisplayName("pop returns null if size is 0")
+    void testPopReturnsNull() {
+        MyStack<Integer> stack = new MyStack<>(5);
+        assertEquals(null, stack.pop());
+    }
 
 
-    
+
+
 }
