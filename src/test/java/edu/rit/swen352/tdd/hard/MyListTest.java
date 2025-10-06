@@ -46,4 +46,12 @@ class MyListTest {
 
     }
 
+    @Test
+    @DisplayName("4b: test for getting an element in the list at an index outside of the size")
+    public void getOutOfBoundsElement(){
+
+        MyList<Integer> list = new MyList<>();
+        assertEquals(0, list.get(0));
+    }
+
 }
