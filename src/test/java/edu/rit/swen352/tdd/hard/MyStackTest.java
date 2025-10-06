@@ -15,4 +15,11 @@ class MyStackTest {
         MyStack<Integer> stack = new MyStack<>(5);
         assertNotNull(stack);
     }
+
+    @Test
+    @DisplayName("No-arg constructor defaults capacity to 16")
+    void testNoArgConstructorDefaultCapacity() {
+        MyStack<Integer> stack = new MyStack<>();
+        assertEquals(16, stack.getCapacity());
+    }
 }
