@@ -51,7 +51,9 @@ class MyListTest {
     public void getOutOfBoundsElement(){
 
         MyList<Integer> list = new MyList<>();
-        assertEquals(0, list.get(0));
+        Exception exception = assertThrows(Exception.class,
+        () -> list.get(1));
+        assertEquals("Index is outside the size of the list", exception.getMessage());
     }
 
 }

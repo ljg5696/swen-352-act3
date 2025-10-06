@@ -51,7 +51,10 @@ public class MyList<T> {
     }
     
     public T get(int index){
-        
+        if(index < 0  || index > size){
+
+            throw new NoSuchElementException("Index is outside the size of the list");
+        }
         return (T) elements[index];
     }
 }
