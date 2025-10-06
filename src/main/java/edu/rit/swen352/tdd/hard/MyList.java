@@ -46,7 +46,7 @@ public class MyList<T> {
     }
 
     public int size(){
-        throw new UnsupportedOperationException("Not implemented yet");
+        return size;
 
     }
 }

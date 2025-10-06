@@ -32,7 +32,7 @@ class MyListTest {
     @DisplayName("3: test for checking the size of the list")
     public void sizeTest(){
         MyList<Integer> list = new MyList<>();
-        assertEquals(1, list.size());
+        assertEquals(0, list.size());
 
     }
 
