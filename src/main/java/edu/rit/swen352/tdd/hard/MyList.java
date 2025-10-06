@@ -42,6 +42,8 @@ public class MyList<T> {
 
     public Boolean isEmpty(){
 
-        throw new UnsupportedOperationException("Not implemented yet");
+        return size == 0;
     }
+
+    
 }
