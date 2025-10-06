@@ -28,4 +28,12 @@ class MyListTest {
 
     }
 
+    @Test
+    @DisplayName("3: test for checking the size of the list")
+    public void sizeTest(){
+        MyList<Integer> list = new MyList<>();
+        assertEquals(1, list.size());
+
+    }
+
 }
