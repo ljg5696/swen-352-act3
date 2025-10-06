@@ -30,4 +30,12 @@ class MyStackTest {
         assertEquals(5, stack.getCapacity());
     }
     
+    @Test
+    @DisplayName("isEmpty returns true for new stack")
+    void testIsEmptyForNewStack() {
+        MyStack<Integer> stack = new MyStack<>(5);
+        assertEquals(true, stack.isEmpty());
+    }
+
+
 }

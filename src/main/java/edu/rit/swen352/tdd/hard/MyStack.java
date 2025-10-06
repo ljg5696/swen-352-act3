@@ -41,4 +41,8 @@ public class MyStack<T> {
         return capacity;
     }
 
+    public boolean isEmpty() {
+        throw new UnsupportedOperationException("NYI");
+    }
+
 }
