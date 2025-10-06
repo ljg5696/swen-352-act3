@@ -55,12 +55,14 @@ class MyStackTest {
     }
 
     @Test
-    @DisplayName("push increases size by one")
+    @DisplayName("push adds the correct object whithe teh correct value")
     void testPushCorrectvalue() {
         MyStack<String> stack = new MyStack<>(5);
         stack.push("Test");
         assertEquals("Test", stack.pop());
     }
+
+    
 
 
 
