@@ -46,11 +46,11 @@ public class MyStack<T> {
     }
 
     public int size() {
-        throw new UnsupportedOperationException();
+        return size;
     }
 
     public void push(T element) {
-        throw new UnsupportedOperationException();
+        size += 1;
     }
 
 }
